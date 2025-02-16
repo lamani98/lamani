@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'reset.css';
+@import 'variables.css';
+@import 'layout.css';
+@import 'components.css';
+
+/* About Section */
+.team-section {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-gray-50);
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+  }
+  
+  .team-member {
+    background: var(--color-background);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-4px);
+  }
+  
+  .team-member-image {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto var(--spacing-md);
+    overflow: hidden;
+  }
+  
+  .team-member-image img {
+    width: 100%;
+    height: 101%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    opacity: 60%;
+  }
+  
+  .team-member:hover .team-member-image img {
+    transform: scale(1.1);
+    opacity: 100%;
+  }
+  
+  .team-member-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .team-member-role {
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .team-member-education {
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .team-member-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .team-member-tag {
+    background: var(--color-gray-100);
+    color: var(--color-gray-700);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+  }
+  
+  .team-member-bio {
+    color: var(--color-gray-600);
+    line-height: 1.6;
+  }
+
+  .card img {
+    width: 100%;        /* A imagem vai ocupar 100% da largura do seu container */
+    height: auto;       /* A altura será ajustada automaticamente para manter a proporção da imagem */
+    max-width: 300px;   /* Define a largura máxima da imagem (600px neste exemplo) */
+  }

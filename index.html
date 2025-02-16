@@ -1,49 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-1">
+<html lang="pt-1">  
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with JohnDoe landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Lamani | Arquitetura</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="public_html/assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
-	<link rel="stylesheet" href="public_html/assets/css/johndoe.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alvelim Core">
+    <title>ACAL | Arquitetura</title>
+
+    <link rel="icon" type="image/png" href="assets/imgs/logo.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/imgs/logo.png" sizes="32x32">
+
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">   
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
                 <li class="social-item">
-                    <a class="social-link text-light" href="mailto:arquimandac@gmail.com?subject=Oie%20Amanda">
+                    <a class="social-link text-light email" href="#">
                         <i class="ti-google" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li class="social-item">
-                    <a class="social-link text-light" href="https://www.instagram.com/arqmandac">
+                    <a class="social-link text-light instagram" href="#">
                         <i class="ti-instagram" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li class="social-item">
-                    <a class="social-link text-light" href="https://www.linkedin.com/in/amanda-caroline-0076ba11a/">
+                    <a class="social-link text-light linkedin" href="#">
                         <i class="ti-linkedin" aria-hidden="true"></i>
                     </a>
                 </li>
             </ul>  
-            <div class="header-content">
-                <h4 class="header-subtitle" >Olá, Eu sou</h4>
-                <h1 class="header-title">Amanda Caroline</h1>
-                <h6 class="header-mono" >Arquiteta e Urbanista | Designer</h6>
-                <a href="public_html/assets/documents/amanda_caroline.pdf" download="portfolio_amanda_caroline.pdf">
-                    <button class="btn btn-primary btn-rounded" href="public_html/assets/documents/amanda_caroline.pdf"> 
-                        <i class="ti-printer pr-2"></i>Resumo
-                    </button>
-                </a>
-            </div>
         </div>
     </header>
+
+    <section id="inicio">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide" style="background-image: url(assets/imgs/academias/smartfits/modelo/slide.jpg)">'
+                    <div class="slide-content">
+                        <h1 class="slide-title">Transformando Visões em Realidade</h1>
+                        <p class="slide-subtitle" style="color: #fff !important">Soluções arquitetônicas inovadoras para empresas que buscam excelência</p>
+                        <a href="#contato" class="button" style="--color-primary: #dbbe36; --color-primary-light: #dbbe36">Solicite uma Consulta</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(https://demo-source.imgix.net/house.jpg)">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Transformando Visões em Realidade</h1>
+                        <p class="slide-subtitle" style="color: #fff !important">Soluções arquitetônicas inovadoras para empresas que buscam excelência</p>
+                        <a href="#contato" class="button" style="--color-primary: #668c18; --color-primary-light: #668c18">Solicite uma Consulta</a>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url(assets/imgs/comerciais/sp-estetica-dra-daiana/estetica_salao2.png)">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Transformando Visões em Realidade</h1>
+                        <p class="slide-subtitle" style="color: #fff !important">Soluções arquitetônicas inovadoras para empresas que buscam excelência</p>
+                        <a href="#contato" class="button" style="--color-primary: #775052; --color-primary-light: #775052">Solicite uma Consulta</a>
+                    </div>
+                </div>
+            </div>
+            <button class="prev" style="display: none;">&#10094;</button>
+            <button class="next" style="display: none;">&#10095;</button>
+        </div>
+    </section>
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,316 +78,361 @@
             <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#inicio" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">Sobre</a>
+                        <a href="#sobre" class="nav-link">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resumo</a>
+                        <a href="#projetos" class="nav-link">Projetos</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
-                    <img src="public_html/assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <img src="assets/imgs/logo.png" alt="" class="brand-img">
                     <li class="brand-txt">
-                        <h5 class="brand-title">Amanda Caroline</h5>
+                        <h5 class="brand-title">ACAL Arquitetura</h5>
                         <div class="brand-subtitle">Arquiteta e Urbanista | Designer</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#projetos_recentes" class="nav-link">Recentes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link">Blog</a>
+                        <a href="#servicos" class="nav-link">Serviços</a>
                     </li>
                     <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contato</a>
+                        <a href="#contato" class="nav-link">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
+
+    <div class="container-fluid" id="sobre">
         <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Quem Sou eu ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">Uma arquiteta / Amo mudar o mundo pelos detalhes</h5>
-                <p class="mt-20">Carreira em desenvolvimento na área de Arquitetura e Urbanismo,
-                    com habilidade para auxílio na elaboração de projetos executivos,
-                    realização de estudo de viabilidade técnica e econômica, entre outras
-                    rotinas do departamento, focando a excelência dos serviços prestados</p>
-                <a href="public_html/assets/documents/Curriculo - Amanda Caroline.pdf" download="Curriculo_Amanda_Caroline.pdf">
-                    <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
+            <div class="col-lg-7 about-card">
+                <h3 class="font-weight-light">Quem Nós Somos ?</h3>
+                <span class="line"></span>
+                <div class="team-member">
+                    <div class="team-member-image">
+                      <img src="https://media.licdn.com/dms/image/v2/D4D03AQHj9iW_ob3OLw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1687996910950?e=1740614400&v=beta&t=DneDHSbw2KAS009B6c6aYz95Si45uFdn3K-mpbreCnI" alt="Amanda Caroline">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 about-card" style="padding-left: 0px;">
+                <h4 class="mb-3" style="margin-top: 20%; color: #FAAC04">Amanda Caroline</h4>
+                <h6 class="mb-3" style="color: #DBD9D2">Arquiteta e Urbanista Sênior</h5>
+                <p class="mt-20" style="color: #A49E8E">Carreira em desenvolvimento na área de Arquitetura e Urbanismo,
+                    com habilidade para elaboração de projetos arquitetônicos executivos.</p>
+                <p class="mt-20" style="color: #A49E8E">Sou uma arquiteta Homologada SmartFit, além de atuar em todas as áreas da construção civil,
+                    desde grandes galpões que se transformam em academias há studios residencias para alocação
+                </p>
+                <a href="https://lamani98.github.io/lamani/">
+                    <button class="btn btn-outline-danger" style="display: block; margin: 0 auto;"><i class="icon-down-circled2 "></i>Portfolio Pessoal</button>
                 </a>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Informações Pessoais</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Aniversário</span> : 06/02/1998</li>
-                    <li><span>Email</span> : arquimandac@gmail.com</li>
-                    <li><span>Telefone</span> : +55 (11) 95917-6564</li>
-                    <li><span>instagram</span> : arqmandac </li>
-                    <li><span>Endereço</span> :  Rua Vicente Pinheiro, 13 - São Paulo - Brasil</li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item">
-                        <a class="social-link" href="mailto:arquimandac@gmail.com?subject=Oie%20Amanda">
-                            <i class="ti-google" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link" href="https://www.instagram.com/arqmandac">
-                            <i class="ti-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link" href="https://www.linkedin.com/in/amanda-caroline-0076ba11a/">
-                            <i class="ti-linkedin" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>  
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Minhas Experiências</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>UX Design</h6>
-                        <p class="subtitle"> exercitat Repellendus,  corrupt.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Web Development</h6>
-                        <p class="subtitle">Lorem ipsum dolor sit consectetur.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Digital Marketing</h6>
-                        <p class="subtitle">voluptate commodi illo voluptatib.</p>
-                        <hr>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 
-    <!--Resume Section-->
-    <section class="section" id="resume">
+    <section class="section" id="projetos">
         <div class="container">
-            <h2 class="mb-5"><span class="text-danger">Meu</span> Resumo</h2>
+            <h1 class="mb-5"><span class="text-danger">Nossos</span> Projetos</h1>
+            <span class="line" style="display: none;"></span>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#" data-filter=".todos" class="active">
+                        Todos
+                    </a>
+                    <a href="#" data-filter=".academias">
+                        Academias
+                    </a>
+                    <a href="#" data-filter=".malls">
+                        Malls
+                    </a>
+                    <a href="#" data-filter=".comerciais">
+                        Comerciais
+                    </a>
+                    <a href="#" data-filter=".franquias">
+                        Franquias
+                    </a>
+                    <a href="#" data-filter=".residenciais">
+                        Residenciais
+                    </a>
+                </div>
+
+                <div class="portfolio-container"> 
+                    <div class="col-md-6 col-lg-4 academias franquias todos new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/academias/smartfits/modelo/slide2.jpg" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/academias/smartfits/modelo/slide2.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">ACADEMIAS</h6>
+                                    <p class="subtitle">Espaços de treino projetados com funcionalidade, estética e inovação.</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 residenciais todos new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/apartamentos/lofts/sp-loft-bia/render2.jpeg" class="img-fluid">  
+                            <a href="./residenciais.html">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">LOFT</h6>
+                                        <p class="subtitle">Espaços Modernos com Estilo e Versatilidade</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                                                     
+                    </div> 
+
+                    <div class="col-md-6 col-lg-4 comerciais todos new"> 
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/comerciais/sp-salao-cherry/render1.png" class="img-fluid">     
+                            <a href="./comerciais.html">       
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">SALÃO DE BELEZA</h6>
+                                        <p class="subtitle">Espaços de salão de beleza que combinam conforto, funcionalidade e estilo.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                                
+                    </div> 
+
+                    <div class="display-none-mobile col-md-6 col-lg-4 comerciais todos new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/comerciais/sp-restaurante-ubatuba/render1.jpeg" class="img-fluid">       
+                            <a href="./comerciais.html">                         
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">COMERCIAIS</h6>
+                                        <p class="subtitle">Soluções arquitetônicas inteligentes para negócios de sucesso.</p>
+                                    </div>
+                                </div>    
+                            </a>
+                        </div>              
+                    </div> 
+
+                    <div class="col-md-6 col-lg-4 franquias todos new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/franquias/jet_pizzas/modelo/slide.JPG" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">FRANQUIAS</h6>
+                                    <p class="subtitle">Padronização e identidade visual para franquias de destaque.</p>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 residenciais todos new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/casas/sp-residencial-marcos-e-renata/casa_cozinha2.png" class="img-fluid">  
+                            <a href="./residenciais.html">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">RESIDENCIAL</h6>
+                                        <p class="subtitle">Projetos personalizados para casas que refletem seu estilo de viver.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                                                     
+                    </div>
+
+                    <div class="display-none-mobile col-md-6 col-lg-4 comerciais todos new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/comerciais/sp-escritorio-sirius/render1.png" class="img-fluid">   
+                            <a href="./comerciais.html">                             
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">ESCRITÓRIO</h6>
+                                        <p class="subtitle">Ambientes de escritório que promovem produtividade e bem-estar.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                                                       
+                    </div> 
+
+                    <div class="display-none-mobile col-md-6 col-lg-4 residenciais todos new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/apartamentos/lofts/sp-loft-lucca/render1.jpeg" class="img-fluid">
+                            <a href="./residenciais.html">
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">LOFT</h6>
+                                        <p class="subtitle">Design Moderno e Funcionalidade em Harmonia</p>
+                                    </div>
+                                </div> 
+                            </a>
+                        </div>
+                    </div> 
+
+                    <div class="display-none-mobile col-md-6 col-lg-4 comerciais todos new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/comerciais/sp-estetica-dra-daiana/estetica_salao2.png" class="img-fluid">  
+                            <a href="./comerciais.html">                              
+                                <div class="content-holder">
+                                    <div class="text-holder">
+                                        <h6 class="title">CLINICA ESTÉTICA</h6>
+                                        <p class="subtitle">Elegância e Conforto em Cada Detalhe</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                                                    
+                    </div> 
+
+                    <div class="col-md-6 col-lg-4 malls todos new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/shoppings/sp-shopping-cidade-tiradentes/planta1.JPG" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/shoppings/sp-shopping-cidade-tiradentes/planta1.JPG"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">SHOPPINGS</h6>
+                                    <p class="subtitle">Design estratégico para shoppings modernos, funcionais e atraentes.</p>
+                                </div>
+                            </div> 
+                        </div>                         
+                    </div>
+                </div> 
+            </div>  
+        </div>            
+    </section>
+
+    <section class="section" id="projetos_recentes">
+        <div class="container">
+            <h2 class="mb-5">Projetos <span class="text-danger">Recentes</span></h2>
+            <span class="line" style="display: none;"></span>
             <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Experiências</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2019 - Present</h6>
-                            <P>Arquiteta e Urbanista | Freelance</P>
-                            <P class="subtitle">Desenvolvimento de projetos executivos em franquias, casa e apartamentos de alto padrão.</P>
-                            <hr>
-                            <h6 class="title text-danger">2018 - 2020</h6>
-                            <P>Arquiteta e Urbanista | Mangabe</P>
-                            <P class="subtitle">Desenvolvimento de projetos executivos em franquias, casa e apartamentos de alto padrão.</P>
-                            <hr>
-                        </div>
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/comerciais/sp-estetica-dra-daiana/estetica_salao2.png">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Clínica Doutora Daiana</h6>
+
+                        <p class="post-details">
+                            <a>By: Estúdio AC Design</a>
+                            <a><i class="ti-pin text-danger"></i> Ribeirão Pires - SP</a>
+                            <a><i class="ti-ruler-alt-2 text-danger"></i> 72m²</a>
+                        </p>
+                        
+                        <p>Este projeto foi cuidadosamente desenvolvido para oferecer um ambiente sofisticado, funcional e acolhedor, refletindo o cuidado e a elegância que a clínica deseja transmitir aos seus clientes.</p>
+
+                        <p><b>Hall de Entrada: </b>Um espaço acolhedor e sofisticado, com móveis elegantes, iluminação suave e detalhes que promovem uma recepção calorosa e profissional.</p>
+
+                        <p><b>Sala de Estética: </b>Projetada para oferecer ergonomia e eficiência, conta com iluminação ideal, layout otimizado e acabamentos que refletem cuidado e bem-estar</p>
+                        
+                        <p><b>Área de Manicure: </b>Estações bem planejadas, que unem conforto e organização, garantindo uma experiência agradável para clientes e praticidade para profissionais.</p>
+                        
+                        <a href="#" class="read-more">Veja Mais <i class="ti-angle-double-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Acadêmico</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2021 - 2022</h6>
-                            <P>Design Gráfico | FIAP</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.</P>
-                            <hr>
-                            <h6 class="title text-danger">2021 - 2021</h6>
-                            <P>Lumion Avançado |  Mauricio Camargo</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-                            <hr>
-                            <h6 class="title text-danger">2017 - 2021</h6>
-                            <P>Bacharelado em Arquitetura e Urbanismo</P>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, id officiis quas placeat quia voluptas dolorum rem animi nostrum quae.aliquid repudiandae saepe!.</P>
-                            
-                        </div>
+
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/apartamentos/lofts/sp-loft-lucca/render1.jpeg">
+                    </div>
+                    <div class="content-holder">
+                        <h6 class="title">Studio Família Mina</h6>
+
+                        <p class="post-details">
+                            <a>By: Estúdio AC Design</a>
+                            <a><i class="ti-pin text-danger"></i> Brooklin - SP</a>
+                            <a><i class="ti-ruler-alt-2 text-danger"></i> 25m²</a>
+                        </p>
+                        
+                        <p>Este projeto foi cuidadosamente desenvolvido para otimizar cada metro quadrado, garantindo funcionalidade, conforto e elegância.</p>
+                        
+                        <p><b>Móveis Planejados: </b>Todo o mobiliário foi detalhado para maximizar o uso do espaço, integrando design moderno e soluções inteligentes, como armários embutidos, prateleiras multifuncionais e móveis compactos que garantem fluidez ao ambiente.</p>
+                        
+                        <p><b>Banheiro: </b>Um espaço prático e sofisticado, com acabamentos de alta qualidade, nichos embutidos para organização e iluminação estratégica, proporcionando conforto e modernidade.</p>
+                        
+                        <p><b>Sacada: </b>Transformada em uma extensão funcional do apartamento, a sacada recebeu acabamentos refinados e foi equipada para ser um espaço de relaxamento, com integração harmoniosa ao interior.</p>
+                        
+                        <a href="#" class="read-more">Veja Mais <i class="ti-angle-double-right"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Habilidades</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                           <h6>AutoCad 2D</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Sketchup</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Lumion</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Photoshop</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Revit</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>QGIS</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
+
+                <div class="blog-card">
+                    <div class="img-holder">
+                        <img src="assets/imgs/comerciais/sp-lojaBrinquedos-babyRun/lojaBrinquedos_fachada.jpeg">
                     </div>
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Idiomas</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                           <h6>Inglês</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Frances</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Espanhol</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
+                    <div class="content-holder">
+                        <h4 class="title">Lojas de Brinquedos - Baby Run</h4>
+
+                        <p class="post-details">
+                            <a>By: Estúdio AC Design</a>
+                            <a><i class="ti-pin text-danger"></i> Brooklin - SP</a>
+                            <a><i class="ti-ruler-alt-2 text-danger"></i> 125m²</a>
+                        </p>
+                        
+                        <p>Criar um ambiente lúdico, moderno e funcional que atraia crianças e famílias. Otimizar o espaço disponível de 125m² para atender às necessidades da loja e dos funcionários.</p>
+                        
+                        <p><b>Área de Vendas: </b>Espaço principal para a exposição dos brinquedos. Móveis modulares e prateleiras ajustáveis em alturas diferentes para fácil acesso de crianças.</p>
+                        
+                        <p><b>Escritório: </b>Espaço reservado para administração e controle de estoque. Mesa ampla, armários planejados e iluminação funcional.</p>
+                        
+                        <p><b>Copa para Funcionários: </b>Equipado com pia, micro-ondas, frigobar e armários para utensílios. Pequeno espaço para refeições rápidas, com uma mesa compacta e cadeiras.</p>
+                        
+                        <a href="#" class="read-more">Veja Mais <i class="ti-angle-double-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section bg-dark text-center">
+    <section class="section" id="servicos">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">+4800</h1>
-                            <p class="text-light mb-1">Horas Trabalhadas</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">+30</h1>
-                            <p class="text-light mb-1">Projetos Realizados</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">8</h1>
-                            <p class="text-light mb-1">Clientes Felizes</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">2k</h1>
-                            <p class="text-light mb-1">Latas de Energético</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">Meu</span> Serviço</h2>
+            <h2 class="mb-5"><span class="text-danger">Nossos</span> Serviços</h2>
+            <span class="line" style="display: none;"></span>
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
+                       <div class="card-header has-icon"> 
+                            <i class="ti-ruler-pencil text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Dedicada</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-light">Levantamento Técnico</h5>
+                            <P class="subtitle">O levantamento técnico é a etapa inicial do projeto arquitetônico, onde visitamos o local para realizar medições dos ambientes e observar as condições do espaço.</P>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
+                            <i class="ti-palette text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Criativa</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-light">Layout dos Ambientes</h5>
+                            <P class="subtitle">Criamos a disposição ideal dos móveis, circulação e elementos estruturais, garantindo que cada ambiente atenda às necessidades do cliente, considerando funcionalidade, fluxo e conforto.</P>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
-                            <i class="ti-package text-danger" aria-hidden="true"></i>
+                            <i class="ti-image text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Proativa</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-light">Renderização de Imagens 3D</h5>
+                            <P class="subtitle">A Renderização de Imagens 3D é a criação de imagens realistas do projeto arquitetônico que permitem visualizar o design com detalhes de texturas, luz e volume, facilitando a compreensão do resultado final.</P>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
-                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+                            <i class="ti-book text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Boa comunicação</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-light">Caderno Executivo</h5>
+                            <P class="subtitle">Todos os documentos técnicos do projeto arquitetônico, como plantas, cortes e especificações de materiais que serve como guia para a execução da obra.</P>
                         </div>
                     </div>
                 </div>
@@ -371,8 +442,8 @@
                             <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Trabalho em equipe</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-light">Planilha de Materiais</h5>
+                            <P class="subtitle">A Planilha de Obras detalha os quantidade, valores, frete, e links de compra de material informado no executivo arquitetônico, além de orçamentos de mão de obra.</P>
                         </div>
                     </div>
                 </div>
@@ -382,8 +453,8 @@
                             <i class="ti-support text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Viril</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
+                            <h5 class="mb-3 card-title text-light">Suporte Pós Projeto</h5>
+                            <P class="subtitle">Assistência após a conclusão do projeto arquitetônico, garantindo que a execução siga conforme o planejado. Inclui ajustes, esclarecimento de dúvidas.</P>
                         </div>
                     </div>
                 </div>
@@ -391,267 +462,7 @@
         </div>
     </section>
 
-    <section class="section bg-dark py-5">
-        <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <button class="btn bg-primary w-lg" >Hire me</button>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Meu</span> Portfolio</h1>
-            <div class="portfolio">
-                <div class="filters">
-                    <a href="#" data-filter=".new" class="active">
-                        New
-                    </a>
-                    <a href="#" data-filter=".advertising">
-                        Advertising
-                    </a>
-                    <a href="#" data-filter=".branding">
-                        Branding
-                    </a>
-                    <a href="#" data-filter=".web">
-                        Web
-                    </a>
-                </div>
-                <div class="portfolio-container"> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/web-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>   
-                        </div>             
-                    </div>
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/web-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>                         
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/advertising-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>    
-                        </div>              
-                    </div> 
-                    <div class="col-md-6 col-lg-4 web">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/web-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 advertising"> 
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/advertising-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                           <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/web-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
-                           <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/advertising-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                       
-                    </div> 
-                    <div class="col-md-6 col-lg-4 advertising new"> 
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/advertising-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERTISING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>
-                                
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/branding-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/branding-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                     
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/branding-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                    
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/branding-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                      
-                    </div> 
-                    <div class="col-md-6 col-lg-4 branding">
-                        <div class="portfolio-item">
-                            <img src="public_html/assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
-                            <div class="content-holder">
-                                <a class="img-popup" href="public_html/assets/imgs/branding-5.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div>                                                   
-                    </div>
-                </div> 
-            </div>  
-        </div>            
-    </section>
-    <!-- End of portfolio section -->
-
-    <section class="section" id="blog">
-        <div class="container">
-            <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
-            <div class="row">
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="public_html/assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Consectetur adipisicing elit</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
-                        </p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
-
-                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="public_html/assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Explicabo illo</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
-                        </p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="public_html/assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title">Porro Quisqua</h4>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
-                        </p>
-                        
-                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!-- end of blog wrapper -->
-
-            </div>
-        </div>
-    </section>
-
-    <div class="section contact" id="contact">
+    <div class="section contact" id="contato">
         <div id="map" class="map"></div>
         <div class="container">
             <div class="row">
@@ -682,7 +493,7 @@
                                 <i class="ti-mobile icon-md"></i>
                             </div>
                             <div class="col-10 ">
-                                <h6 class="d-inline">Telefone : <br> <span class="text-muted">+55 (11) 95917-6564/span></h6>
+                                <h6 class="d-inline">Telefone : <br> <span class="text-muted">+55 (11) 95917-6564</h6>
                             </div>
                         </div>
                         <div class="row mb-2">
@@ -701,19 +512,19 @@
                                 <h6 class="d-inline">Email :<br> <span class="text-muted">arquimandac@gmail.com</span></h6>
                             </div>
                         </div>
-                        <ul class="social-icons pt-4">
+                        <ul class="social-icons pt-4" style="margin: 0 auto;">
                             <li class="social-item">
-                                <a class="social-link text-dark" href="mailto:arquimandac@gmail.com?subject=Oie%20Amanda">
+                                <a class="social-link text-light email" href="#">
                                     <i class="ti-google" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="social-item">
-                                <a class="social-link text-dark" href="https://www.instagram.com/arqmandac">
+                                <a class="social-link text-light instagram" href="#">
                                     <i class="ti-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li class="social-item">
-                                <a class="social-link text-dark" href="https://www.linkedin.com/in/amanda-caroline-0076ba11a/">
+                                <a class="social-link text-light linkedin" href="#">
                                     <i class="ti-linkedin" aria-hidden="true"></i>
                                 </a>
                             </li>
@@ -721,32 +532,28 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <!-- WhatsApp Button -->
+    <a class="whatsapp-button whatsapp" href="#" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer class="footer py-3">
         <div class="container">
-            <!-- <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="http://devcrud.com" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">DevCRUD</span></a> 
-            </p> -->
+            <p class="small mb-0 text-dark">
+                &copy; <script>document.write(new Date().getFullYear())</script> | ACAL Arquitetura | Created with <i class="ti-heart text-dark"></i> By <span class="text-dark">Alvelim Core</span></a> 
+            </p>
         </div>
     </footer>
 
-	<!-- core  -->
-    <script src="public_html/assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="public_html/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="public_html/assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
-    <script src="public_html/assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- JohnDoe js -->
-    <script src="public_html/assets/js/johndoe.js"></script>
-
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/carrossel.js"></script>
+    <script src="assets/js/links.js"></script>
 </body>
 </html>
