@@ -11568,8 +11568,8 @@ pre .code {
 
 @media (max-width: 767.98px) {
   .header {
-    height: 500px;
-    min-height: 500px;
+    height: 100px;
+    min-height: 100px;
   }
   .header .social-icons {
     margin: auto;

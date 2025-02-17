@@ -4,8 +4,6 @@
   top: 0;
   left: 0;
   right: 0;
-  /* background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(8px); */
   z-index: 100;
   padding: var(--spacing-sm) 0;
 }
@@ -26,23 +24,6 @@
   display: none;
 }
 
-@media (min-width: 768px) {
-  .nav-list {
-    display: flex;
-    gap: var(--spacing-lg);
-    list-style: none;
-  }
-  
-  .nav-link {
-    color: var(--color-gray-600);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .nav-link:hover {
-    color: var(--color-primary);
-  }
-}
 
 /* slide Section */
 button.prev {
@@ -103,12 +84,6 @@ button:hover {
   margin-bottom: var(--spacing-md);
 }
 
-@media (min-width: 768px) {
-  .slide-title {
-    font-size: 4rem;
-  }
-}
-
 /* Cards */
 .card {
   background: #1D1F20;
@@ -159,4 +134,30 @@ button:hover {
 
 .whatsapp-button:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: var(--spacing-lg);
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: var(--color-gray-600);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: var(--color-primary);
+  }
+  
+  .slide-title {
+    font-size: 4rem;
+  }
 }
