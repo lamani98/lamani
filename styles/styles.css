@@ -11634,6 +11634,10 @@ pre .code {
   .mb-3 {
     margin-top: 0% !important;
   }
+
+  .about-card {
+    padding: 20px 0 !important;
+  }
 }
 
 .about-section .about-card:last-child {
