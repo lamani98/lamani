@@ -4735,6 +4735,18 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+  .navbar-nav .nav-item {
+    display: block !important;
+  }
+
+  .navbar-title {
+    display: block !important;
+    margin: auto 0;
+    padding-left: 5%;
+    font-size: 1.4rem;
+    color: #FAAC04 !important;
+  }
 }
 
 @media (min-width: 768px) {

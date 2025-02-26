@@ -29,6 +29,7 @@ document.querySelectorAll('.gallery').forEach(item => {
                 overlay.style.display = 'flex';
                 header.style.display = 'none';
                 navbar.style.display = 'none';
+                navigator.vibrate(200);
             }
         });
     }
@@ -53,6 +54,10 @@ closeButton.addEventListener('click', () => {
     overlay.style.display = 'none';
     header.style.display = 'block';
     navbar.style.display = 'block';
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        navigator.vibrate(200);
+    }
 });
 
 overlay.addEventListener("touchstart", function (event) {
