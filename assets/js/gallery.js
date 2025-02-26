@@ -9,26 +9,29 @@ const closeButton = overlay.querySelector('.close');
 let gallerycurrentIndex = 0;
 
 document.querySelectorAll('.gallery').forEach(item => {
-    item.addEventListener('click', (e) => {
-        if (e.target.tagName === 'IMG') {
-            images = Array.from(item.querySelectorAll('img'));
-            gallerycurrentIndex = images.indexOf(e.target);
-            updateCarouselImage();
-            overlay.style.display = 'flex';
-            header.style.display = 'none';
-            navbar.style.display = 'none';
-        }
-    });
-    item.addEventListener('touchend', (e) => {
-        if (e.target.tagName === 'IMG') {
-            images = Array.from(item.querySelectorAll('img'));
-            gallerycurrentIndex = images.indexOf(e.target);
-            updateCarouselImage();
-            overlay.style.display = 'flex';
-            header.style.display = 'none';
-            navbar.style.display = 'none';
-        }
-    });
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        item.addEventListener('click', (e) => {
+            if (e.target.tagName === 'IMG') {
+                images = Array.from(item.querySelectorAll('img'));
+                gallerycurrentIndex = images.indexOf(e.target);
+                updateCarouselImage();
+                overlay.style.display = 'flex';
+                header.style.display = 'none';
+                navbar.style.display = 'none';
+            }
+        });    
+    } else {
+        item.addEventListener('touchend', (e) => {
+            if (e.target.tagName === 'IMG') {
+                images = Array.from(item.querySelectorAll('img'));
+                gallerycurrentIndex = images.indexOf(e.target);
+                updateCarouselImage();
+                overlay.style.display = 'flex';
+                header.style.display = 'none';
+                navbar.style.display = 'none';
+            }
+        });
+    }
 })
 
 function updateCarouselImage() {
@@ -50,4 +53,22 @@ closeButton.addEventListener('click', () => {
     overlay.style.display = 'none';
     header.style.display = 'block';
     navbar.style.display = 'block';
+});
+
+overlay.addEventListener("touchstart", function (event) {
+    startX = event.touches[0].clientX;
+});
+
+overlay.addEventListener("touchend", function (event) {
+    endX = event.changedTouches[0].clientX;
+  
+    if (endX - startX > 50) {
+        gallerycurrentIndex = (gallerycurrentIndex + 1) % images.length;
+        updateCarouselImage();
+    }
+
+    if (startX - endX > 50) {
+        gallerycurrentIndex = (gallerycurrentIndex - 1 + images.length) % images.length;
+        updateCarouselImage();
+    }
 });
