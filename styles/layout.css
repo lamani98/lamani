@@ -40,5 +40,41 @@
   .section {
     padding: var(--spacing-2xl) 0;
   }
-  
+}
+
+.load-page {
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; 
+  z-index: 1000;       
+  opacity: 1;
+  transition: opacity 1s ease, visibility 0s 3s;
+}
+
+.load-page {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#load-page-text {
+  font-size: 2rem;
+  white-space: nowrap;
+  display: inline-block;
+  opacity: 0;
+  padding-top: 20%;
+}
+
+.load-page.load-page-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 0s 3s; 
+}
+
+@media (max-width: 768px) {
+  #load-page-text {
+    padding-top: 60%;
+  }
 }
