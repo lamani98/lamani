@@ -73,8 +73,39 @@
   transition: opacity 1s ease, visibility 0s 3s; 
 }
 
+.projetos-container {
+  position: relative;
+  display: inline-block;
+}
+.projetos-imagem {
+  width: 500px;
+  transition: opacity 0.5s;
+  padding-right: 1% !important;
+  padding-bottom: 8%;
+}
+.projetos-mensagem {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 @media (max-width: 768px) {
   #load-page-text {
     padding-top: 60%;
+  }
+
+  .projetos-container {
+    display: block !important;
+  }
+
+  .portfolio {
+    display: none;
   }
 }
