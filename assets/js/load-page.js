@@ -47,25 +47,6 @@ if (window.matchMedia("(max-width: 768px)").matches) {
         mensagem_academia.style.opacity = "0";
       }
 
-      const img_residencial = document.getElementById("projetos-imagem-residencial");
-      const mensagem_residencial = document.getElementById("projetos-mensagem-residencial");
-      const rect_residencial = img_residencial.getBoundingClientRect();
-      const isVisible_residencial = rect_residencial.top >= 0 && rect_residencial.bottom <= window.innerHeight;
-      
-      if (isVisible_residencial) {
-        if (!timer) {
-          timer = setTimeout(() => {
-            img_residencial.style.opacity = "0.4";
-            mensagem_residencial.style.opacity = "1";
-          }, 1500);
-        }
-      } else {
-        clearTimeout(timer);
-        timer = null;
-        img_residencial.style.opacity = "1";
-        mensagem_residencial.style.opacity = "0";
-      }
-
       const img_comercial = document.getElementById("projetos-imagem-comercial");
       const mensagem_comercial = document.getElementById("projetos-mensagem-comercial");
       const rect_comercial = img_comercial.getBoundingClientRect();
@@ -83,6 +64,25 @@ if (window.matchMedia("(max-width: 768px)").matches) {
         timer = null;
         img_comercial.style.opacity = "1";
         mensagem_comercial.style.opacity = "0";
+      }
+  
+      const img_residencial = document.getElementById("projetos-imagem-residencial");
+      const mensagem_residencial = document.getElementById("projetos-mensagem-residencial");
+      const rect_residencial = img_residencial.getBoundingClientRect();
+      const isVisible_residencial = rect_residencial.top >= 0 && rect_residencial.bottom <= window.innerHeight;
+      
+      if (isVisible_residencial) {
+        if (!timer) {
+          timer = setTimeout(() => {
+            img_residencial.style.opacity = "0.4";
+            mensagem_residencial.style.opacity = "1";
+          }, 1500);
+        }
+      } else {
+        clearTimeout(timer);
+        timer = null;
+        img_residencial.style.opacity = "1";
+        mensagem_residencial.style.opacity = "0";
       }
   }
 
