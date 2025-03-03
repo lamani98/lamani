@@ -119,7 +119,6 @@ button:hover {
   position: fixed;
   bottom: var(--spacing-lg);
   right: var(--spacing-lg);
-  background: #25d366;
   color: var(--color-white);
   width: 60px;
   height: 60px;
@@ -130,6 +129,7 @@ button:hover {
   box-shadow: var(--shadow-lg);
   transition: transform 0.3s;
   z-index: 100;
+  font-size: 32px;
 }
 
 .whatsapp-button:hover {

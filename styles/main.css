@@ -4,6 +4,13 @@
 @import 'layout.css';
 @import 'components.css';
 
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('../assets/fonts/FTMilky-FREE.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* About Section */
 .team-section {
     padding: var(--spacing-2xl) 0;

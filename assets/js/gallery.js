@@ -10,17 +10,6 @@ let gallerycurrentIndex = 0;
 
 document.querySelectorAll('.gallery').forEach(item => {
     if (window.matchMedia("(max-width: 768px)").matches) {
-        item.addEventListener('click', (e) => {
-            if (e.target.tagName === 'IMG') {
-                images = Array.from(item.querySelectorAll('img'));
-                gallerycurrentIndex = images.indexOf(e.target);
-                updateCarouselImage();
-                overlay.style.display = 'flex';
-                header.style.display = 'none';
-                navbar.style.display = 'none';
-            }
-        });    
-    } else {
         item.addEventListener('touchend', (e) => {
             if (e.target.tagName === 'IMG') {
                 images = Array.from(item.querySelectorAll('img'));
@@ -31,7 +20,18 @@ document.querySelectorAll('.gallery').forEach(item => {
                 navbar.style.display = 'none';
                 navigator.vibrate(200);
             }
-        });
+        });    
+    } else {
+        item.addEventListener('click', (e) => {
+            if (e.target.tagName === 'IMG') {
+                images = Array.from(item.querySelectorAll('img'));
+                gallerycurrentIndex = images.indexOf(e.target);
+                updateCarouselImage();
+                overlay.style.display = 'flex';
+                header.style.display = 'none';
+                navbar.style.display = 'none';
+            }
+        });    
     }
 })
 

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const menu = document.getElementById("menu");
     const textElement = document.getElementById("load-page-text");
-    const phrase = "ACAL  ARQ";
+    const phrase = "PÁGINA EM CONSTRUÇÃO";
     let currentIndex = 0;
   
     // Função para adicionar letra por letra
@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(typeLetter, 400);  // Aguarda 200ms antes de adicionar a próxima letra
       } else {
         setTimeout(() => {
-            document.querySelector('.load-page').classList.add('load-page-hidden');
-            menu.style.display = 'flex';
+          window.location.href = "../index.html";
         }, 2000);
       }
     }
