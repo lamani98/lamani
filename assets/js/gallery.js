@@ -10,6 +10,12 @@ let gallerycurrentIndex = 0;
 
 document.querySelectorAll('.gallery').forEach(item => {
     if (window.matchMedia("(max-width: 768px)").matches) {
+        item.addEventListener('touchmove', (e) => {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });   
+        
         item.addEventListener('touchstart', (e) => {
             if (e.target.tagName === 'IMG') {
                 images = Array.from(item.querySelectorAll('img'));
