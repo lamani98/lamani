@@ -8,16 +8,23 @@ const closeButton = overlay.querySelector('.close');
 
 let gallerycurrentIndex = 0;
 
+let startX, startY;
+
 document.querySelectorAll('.gallery').forEach(item => {
     if (window.matchMedia("(max-width: 768px)").matches) {
-        item.addEventListener('touchmove', (e) => {
-            if (e.target.tagName === 'IMG') {
-                e.preventDefault();
-            }
-        });   
-        
-        item.addEventListener('touchstart', (e) => {
-            if (e.target.tagName === 'IMG') {
+        item.addEventListener("touchstart", function (e) {
+            // Captura a posição inicial do toque
+            // startX = event.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        });
+
+        item.addEventListener("touchend", function (e) {
+            // Calcula a diferença entre a posição inicial e a final
+            // let diffX = Math.abs(event.changedTouches[0].clientX - startX);
+            let diffY = Math.abs(e.changedTouches[0].clientY - startY);
+
+            // Se o usuário arrastar mais na vertical, cancela o clique
+            if (e.target.tagName === 'IMG' && diffY < 10) {
                 images = Array.from(item.querySelectorAll('img'));
                 gallerycurrentIndex = images.indexOf(e.target);
                 updateCarouselImage();
@@ -26,7 +33,25 @@ document.querySelectorAll('.gallery').forEach(item => {
                 navbar.style.display = 'none';
                 navigator.vibrate(200);
             }
-        });    
+        });
+
+        // item.addEventListener('touchmove', (e) => { 
+        //     if (e.target.tagName === 'IMG') {
+        //         e.preventDefault();
+        //     }
+        // });   
+        
+        // item.addEventListener('touchstart', (e) => {
+        //     if (e.target.tagName === 'IMG') {
+        //         images = Array.from(item.querySelectorAll('img'));
+        //         gallerycurrentIndex = images.indexOf(e.target);
+        //         updateCarouselImage();
+        //         overlay.style.display = 'flex';
+        //         header.style.display = 'none';
+        //         navbar.style.display = 'none';
+        //         navigator.vibrate(200);
+        //     }
+        // });    
     } else {
         item.addEventListener('click', (e) => {
             if (e.target.tagName === 'IMG') {
