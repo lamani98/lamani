@@ -14,7 +14,6 @@ document.querySelectorAll('.gallery').forEach(item => {
     if (window.matchMedia("(max-width: 768px)").matches) {
         item.addEventListener("touchstart", function (e) {
             // Captura a posição inicial do toque
-            // startX = event.touches[0].clientX;
             startY = e.touches[0].clientY;
         });
 
@@ -66,10 +65,6 @@ closeButton.addEventListener('click', () => {
     overlay.style.display = 'none';
     header.style.display = 'block';
     navbar.style.display = 'block';
-
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        navigator.vibrate(200);
-    }
 });
 
 overlay.addEventListener("touchstart", function (event) {

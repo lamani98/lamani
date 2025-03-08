@@ -4,8 +4,8 @@ const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 
 let currentIndex = 0;
-const intervalTime = 1000000000; // 10 segundos
-// const intervalTime = 10000; // 10 segundos
+// const intervalTime = 1000000000; // 10 segundos
+const intervalTime = 10000; // 10 segundos
 
 function updateCarousel() {
   const offset = -currentIndex * 100;
