@@ -20,7 +20,6 @@ document.querySelectorAll('.gallery').forEach(item => {
 
         item.addEventListener("touchend", function (e) {
             // Calcula a diferença entre a posição inicial e a final
-            // let diffX = Math.abs(event.changedTouches[0].clientX - startX);
             let diffY = Math.abs(e.changedTouches[0].clientY - startY);
 
             // Se o usuário arrastar mais na vertical, cancela o clique
@@ -33,25 +32,7 @@ document.querySelectorAll('.gallery').forEach(item => {
                 navbar.style.display = 'none';
                 navigator.vibrate(200);
             }
-        });
-
-        // item.addEventListener('touchmove', (e) => { 
-        //     if (e.target.tagName === 'IMG') {
-        //         e.preventDefault();
-        //     }
-        // });   
-        
-        // item.addEventListener('touchstart', (e) => {
-        //     if (e.target.tagName === 'IMG') {
-        //         images = Array.from(item.querySelectorAll('img'));
-        //         gallerycurrentIndex = images.indexOf(e.target);
-        //         updateCarouselImage();
-        //         overlay.style.display = 'flex';
-        //         header.style.display = 'none';
-        //         navbar.style.display = 'none';
-        //         navigator.vibrate(200);
-        //     }
-        // });    
+        }); 
     } else {
         item.addEventListener('click', (e) => {
             if (e.target.tagName === 'IMG') {
