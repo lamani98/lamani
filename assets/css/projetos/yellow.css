@@ -1,0 +1,71 @@
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../img/yellow-k/externo-1440.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner1{
+  background-image: url("../../img/yellow-k/IMG_4090-1920.webp") !important;
+}
+
+.banner2{
+  background-image: url("../../img/yellow-k/IMG_0959-1920.webp") !important;
+}
+
+.banner3{
+  background-image: url("../../img/yellow-k/bar-1440.webp") !important;
+}
+
+.banner4 {
+  position: relative;
+  height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background-image: url("../../img/yellow-k/render-1920.webp");
+}
+
+@media (max-width: 1024px) {
+  .hero::after {
+    background-image: url("../../img/yellow-k/externo-960.webp");
+    background-size: 200% !important;
+    background-position: 40% 8% !important;
+  }
+
+  .banner1{ background-image: url("../../img/yellow-k/IMG_4090-1440.webp") !important; }
+  .banner2{ background-image: url("../../img/yellow-k/IMG_0959-1440.webp") !important; }
+  .banner3{ background-image: url("../../img/yellow-k/bar-1440.webp") !important; }
+
+  .banner4 {
+    min-height: 100dvh;
+    background-image: url("../../img/yellow-k/render-1440.webp") !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero::after {
+    background-image: url("../../img/yellow-k/externo-960.webp");
+    background-size: 480% !important;
+    background-position: 58% 0% !important;
+  }
+
+  .banner1{ background-image: url("../../img/yellow-k/IMG_4090-960.webp") !important; }
+  .banner2{ background-image: url("../../img/yellow-k/IMG_0959-960.webp") !important; }
+  .banner3{ background-image: url("../../img/yellow-k/bar-960.webp") !important; }
+  .banner4{ background-image: url("../../img/yellow-k/render-960.webp") !important; }
+}
+
+@media (max-width: 480px) {
+  .hero::after {
+    background-image: url("../../img/yellow-k/externo-960.webp");
+  }
+
+  .banner1{ background-image: url("../../img/yellow-k/IMG_4090-960.webp") !important; }
+  .banner2{ background-image: url("../../img/yellow-k/IMG_0959-960.webp") !important; }
+  .banner3{ background-image: url("../../img/yellow-k/bar-960.webp") !important; }
+  .banner4{ background-image: url("../../img/yellow-k/render-960.webp") !important; }
+}

@@ -1,0 +1,41 @@
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-fachada3-1440.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner1 {
+  background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-fachada3-1920.webp") !important;
+}
+
+.banner2 {
+  background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-salao2-1920.webp") !important;
+}
+
+@media (max-width: 1024px) {
+  .hero::after {
+    background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-fachada3-960.webp");
+  }
+  .banner1 { background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-fachada3-1440.webp") !important; }
+  .banner2 { background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-salao2-1440.webp") !important; }
+}
+
+@media (max-width: 768px) {
+  .hero::after {
+    background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-fachada3-960.webp");
+  }
+  .banner1 { background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-fachada3-960.webp") !important; }
+  .banner2 { background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-salao2-960.webp") !important; }
+}
+
+@media (max-width: 480px) {
+  .hero::after {
+    background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-fachada3-960.webp");
+  }
+  .banner1 { background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-fachada3-960.webp") !important; }
+  .banner2 { background-image: url("../../img/academia/mg-smartfit-pocos-de-caldas/smartfit-pos-obra-salao2-960.webp") !important; }
+}

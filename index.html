@@ -1,582 +1,202 @@
 <!DOCTYPE html>
-<html lang="pt-1">  
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alvelim Core">
-    <title>ACAL | Arquitetura</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio ACAL — Arquitetura Comercial Estratégica</title>
+  <meta name="description" content="Studio ACAL é um escritório de arquitetura comercial estratégica. Projetamos ambientes que fortalecem marcas e geram valor aos negócios." />
 
-    <link rel="icon" type="image/png" href="assets/imgs/logo.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="assets/imgs/logo.png" sizes="32x32">
+  <title>ACAL | Arquitetura</title>
 
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="assets/img/logo.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="assets/img/logo.png" sizes="32x32">
+
+
+  <meta property="og:title" content="Studio ACAL — Arquitetura Comercial Estratégica" />
+  <meta property="og:description" content="Projetamos ambientes que fortalecem marcas e geram valor aos negócios." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.studioacal.com.br/" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://www.studioacal.com.br/assets/img/capa2-1440.webp" />
+  <link rel="canonical" href="https://www.studioacal.com.br/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ArchitectureFirm",
+    "name": "Studio ACAL",
+    "description": "Escritório de arquitetura comercial estratégica, projetando ambientes que fortalecem marcas e geram valor aos negócios.",
+    "url": "https://www.studioacal.com.br",
+    "areaServed": "BR"
+  }
+  </script>
 </head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">   
-    <section id="load-page">
-        <div class="load-page">
-            <h1 id="load-page-text"></h1>
-        </div>
-    </section>
-
-    <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item">
-                    <a class="social-link text-light email" href="#">
-                        <i class="ti-google" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a class="social-link text-light instagram" href="#">
-                        <i class="ti-instagram" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a class="social-link text-light linkedin" href="#">
-                        <i class="ti-linkedin" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>  
-        </div>
-    </header>
-
-    <section id="inicio">
-        <div class="carousel-container">
-            <div class="carousel">
-                <div class="slide" style="background-image: url(assets/imgs/academias/smartfits/modelo/slide.jpg)">'
-                    <div class="slide-content-initial-page">
-                        <a href="./academias/index.html">
-                            <p class="slide-subtitle" style="color: #fff !important">Academias <i class="ti-arrow-right" aria-hidden="true"></i></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="slide" style="background-image: url(assets/imgs/apartamentos/lofts/sp-loft-bia/render2.jpeg)">
-                    <div class="slide-content-initial-page">
-                        <a href="./residenciais/index.html">
-                            <p class="slide-subtitle" style="color: #fff !important">Residenciais <i class="ti-arrow-right" aria-hidden="true"></i></p>
-                        </a>
-                    </div>
-                </div>
-                <div class="slide" style="background-image: url(assets/imgs/comerciais/sp-estetica-dra-daiana/estetica_salao2.png)">
-                    <div class="slide-content-initial-page">
-                        <a href="./comerciais/index.html">
-                            <p class="slide-subtitle" style="color: #fff !important">Comerciais <i class="ti-arrow-right" aria-hidden="true"></i></p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <button class="prev" style="display: none;">&#10094;</button>
-            <button class="next" style="display: none;">&#10095;</button>
-        </div>
-    </section>
-
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510" id="menu">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#inicio" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sobre" class="nav-link">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projetos" class="nav-link">Projetos</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">STUDIO ACAL</h5>
-                        <div class="brand-subtitle">Arquiteta e Urbanista | Designer</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#projetos_recentes" class="nav-link">Recentes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#servicos" class="nav-link">Serviços</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contato" class="nav-link">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container-fluid" id="sobre">
-        <div id="about" class="row about-section">
-            <div class="col-lg-7 about-card">
-                <h3 class="font-weight-light">Quem Nós Somos ?</h3>
-                <span class="line"></span>
-                <div class="team-member">
-                    <div class="team-member-image">
-                      <img src="./assets/imgs/avatar.jpg" alt="Amanda Caroline">
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 about-card" style="padding-left: 0px;">
-                <h4 class="mb-3" style="margin-top: 20%; color: #FAAC04">Amanda Lima</h4>
-                <h6 class="mb-3" style="color: #DBD9D2">Arquiteta e Urbanista Sênior</h5>
-                <p class="mt-20" style="color: #A49E8E">Arquiteta com experiência em diversos segmentos, atuando de forma dedicada e multidisciplinar em cada projeto. Com um olhar atento aos desafios, aplico criatividade, paixão e eficiência para desenvolver soluções que vão além da estética, proporcionando funcionalidade, inovação e resultados que superam expectativas.</p>
-                <p class="mt-20" style="color: #A49E8E">O Studio ACAL nasceu da vontade de criar espaços que vão além da estética, transmitindo inovação, conforto e identidade. O nome ACAL carrega em si a ideia de acalmar e acolher, refletindo nossa abordagem arquitetônica: projetos que equilibram funcionalidade e conexão. Especializados em projetos residenciais, comerciais e corporativos, buscamos transformar cada ambiente em uma experiência única, alinhando design inovador e soluções personalizadas às necessidades de cada cliente. No Studio Acal, acreditamos que a arquitetura tem o poder de transformar a rotina, trazendo mais equilíbrio e tranquilidade para os espaços e para quem os vivencia.</p>
-                <a href="index.html">
-                    <button class="btn btn-outline-danger" style="display: block; margin: 0 auto;"><i class="icon-down-circled2 "></i>Portfolio Pessoal</button>
-                </a>
-            </div>
-        </div>
+<body>
+  <div class="loader">
+    <div class="logo-wrapper">
+      <img src="assets/img/logo.png" class="logo" alt="Studio ACAL">
+      <div class="pen"></div>
     </div>
+  </div>
 
+  <header class="site-header">
+    <a href="index.html" class="brand">Studio ACAL</a>
+    <label for="menu-toggle" class="menu-trigger" role="button" aria-expanded="false" aria-controls="menu-panel">Menu</label>
+  </header>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <nav class="menu-panel" id="menu-panel" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+    <div class="menu-panel__top">
+      <span class="brand">Studio ACAL</span>
+      <label for="menu-toggle" class="menu-close" aria-label="Fechar menu">Fechar</label>
+    </div>
+    <div class="menu-links">
+      <a href="#projetos">Projetos</a>
+      <a href="404.html">Processo</a>
+      <a href="404.html">Studio</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div class="menu-panel__bottom">
+      <span>São Paulo, Brasil</span>
+      <span>projesstudioacal@gmail.com</span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="tone tone--e"></div>
+      <div class="hero__content">
+        <h1 class="heading heading--xxl">Studio ACAL</h1>
+        <p class="eyebrow">Arquitetura Comercial Estratégica</p>
+      </div>
+      <div class="hero__scroll">
+        <span>Role</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto">
+      <p class="heading reveal">O espaço é a primeira experiência da sua marca.</p>
+    </section>
+
+    <!-- PROJETO 1 -->
     <section class="section" id="projetos">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Nossos</span> Projetos</h1>
-            <span class="line" style="display: none;"></span>
-
-            <!-- Mobile -->
-            <div class="projetos-container" style="display: none;">
-                <a href="./academias/index.html">
-                    <img id="projetos-imagem-academia" class="projetos-imagem" src="assets/imgs/academias/smartfits/modelo/slide2.jpg">
-                    <div id="projetos-mensagem-academia" class="projetos-mensagem text-danger">ACADEMIAS</div>
-                </a>
+      <div class="container">
+        <div class="project-block__head reveal">
+          <div>
+            <span class="eyebrow">Arquitetura Comercial — Alto de Pinheiros, São Paulo - SP</span>
+            <h2 class="heading heading--xl project-block__title">Yellow K</h2>
+          </div>
+          <a href="projetos/yellow_k.html" class="link-line" aria-label="Ver projeto Yellow K">Ver projeto</a>
+        </div>
+        <div class="grid grid-12">
+          <a href="projetos/yellow_k.html" class="media-link project-block__media reveal">
+            <div class="tone tone--a ratio-16-10 banner_default_style banner1_project1"></div>
+          </a>
+          <div class="project-block__side reveal">
+            <div class="tone tone--a ratio-4-5 banner_default_style banner2_project1">
+              <span class="tone__label">Detalhe</span>
             </div>
-
-            <div class="projetos-container" style="display: none;">
-                <a href="./comerciais/index.html">
-                    <img id="projetos-imagem-comercial" class="projetos-imagem" src="assets/imgs/comerciais/sp-salao-cherry/render1.png">
-                    <div id="projetos-mensagem-comercial" class="projetos-mensagem text-danger">COMERCIAIS</div>
-                </a>
-            </div>
-            
-            <div class="projetos-container" style="display: none;">
-                <a href="./residenciais/index.html">
-                    <img id="projetos-imagem-residencial" class="projetos-imagem" src="assets/imgs/apartamentos/lofts/sp-loft-bia/render2.jpeg">
-                    <div id="projetos-mensagem-residencial" class="projetos-mensagem text-danger">RESIDENCIAIS</div>
-                </a>
-            </div>
-            <!---------------------------------------------------------------------------------------------------------------------------------------------->
-
-            <div class="portfolio portfolio-mobile">
-                <div class="filters">
-                    <a href="#" data-filter=".todos" class="active">
-                        Todos
-                    </a>
-                    <a href="#" data-filter=".academias">
-                        Academias
-                    </a>
-                    <a href="#" data-filter=".malls">
-                        Malls
-                    </a>
-                    <a href="#" data-filter=".comerciais">
-                        Comerciais
-                    </a>
-                    <a href="#" data-filter=".franquias">
-                        Franquias
-                    </a>
-                    <a href="#" data-filter=".residenciais">
-                        Residenciais
-                    </a>
-                </div>
-
-                <div class="portfolio-container"> 
-                    <div class="col-md-6 col-lg-4 academias franquias todos new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/academias/smartfits/modelo/slide2.jpg" class="img-fluid">
-                            <div class="content-holder">
-                                <a href="./academias/index.html">
-                                    <div class="content-holder">
-                                        <div class="text-holder">
-                                            <h6 class="title">ACADEMIAS</h6>
-                                            <p class="subtitle">Espaços de treino projetados com funcionalidade, estética e inovação.</p>
-                                        </div>
-                                    </div> 
-                                </a> 
-                            </div>   
-                        </div>             
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 residenciais todos new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/apartamentos/lofts/sp-loft-bia/render2.jpeg" class="img-fluid">  
-                            <a href="./residenciais/index.html">
-                                <div class="content-holder">
-                                    <div class="text-holder">
-                                        <h6 class="title">LOFT</h6>
-                                        <p class="subtitle">Espaços Modernos com Estilo e Versatilidade</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>                                                     
-                    </div> 
-
-                    <div class="col-md-6 col-lg-4 comerciais todos new"> 
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/comerciais/sp-salao-cherry/render1.png" class="img-fluid">     
-                            <a href="./comerciais/index.html">       
-                                <div class="content-holder">
-                                    <div class="text-holder">
-                                        <h6 class="title">SALÃO DE BELEZA</h6>
-                                        <p class="subtitle">Espaços de salão de beleza que combinam conforto, funcionalidade e estilo.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div> 
-
-                    <div class="display-none-mobile col-md-6 col-lg-4 comerciais todos new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/comerciais/sp-restaurante-ubatuba/render1.jpeg" class="img-fluid">       
-                            <a href="./comerciais/index.html">                         
-                                <div class="content-holder">
-                                    <div class="text-holder">
-                                        <h6 class="title">COMERCIAIS</h6>
-                                        <p class="subtitle">Soluções arquitetônicas inteligentes para negócios de sucesso.</p>
-                                    </div>
-                                </div>    
-                            </a>
-                        </div>              
-                    </div> 
-
-                    <div class="col-md-6 col-lg-4 franquias todos new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/franquias/jet_pizzas/modelo/slide.JPG" class="img-fluid">
-                            <a href="./franquias/index.html">                         
-                                <div class="content-holder">
-                                    <div class="text-holder">
-                                        <h6 class="title">FRANQUIAS</h6>
-                                        <p class="subtitle">Padronização e identidade visual para franquias de destaque.</p>
-                                    </div>
-                                </div>    
-                            </a>
-                        </div>                                                     
-                    </div>
-
-                    <div class="col-md-6 col-lg-4 residenciais todos new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/casas/sp-residencial-marcos-e-renata/casa_cozinha2.png" class="img-fluid">  
-                            <a href="./residenciais/index.html">
-                                <div class="content-holder">
-                                    <div class="text-holder">
-                                        <h6 class="title">RESIDENCIAL</h6>
-                                        <p class="subtitle">Projetos personalizados para casas que refletem seu estilo de viver.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>                                                     
-                    </div>
-
-                    <div class="display-none-mobile col-md-6 col-lg-4 comerciais todos new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/comerciais/sp-escritorio-sirius/render1.png" class="img-fluid">   
-                            <a href="./comerciais/index.html">                             
-                                <div class="content-holder">
-                                    <div class="text-holder">
-                                        <h6 class="title">ESCRITÓRIO</h6>
-                                        <p class="subtitle">Ambientes de escritório que promovem produtividade e bem-estar.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>                                                       
-                    </div> 
-
-                    <div class="display-none-mobile col-md-6 col-lg-4 residenciais todos new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/apartamentos/apartamentos/sp-apartamento-thay/ap_sala_jantar.jpeg" class="img-fluid">
-                            <a href="./residenciais/index.html">
-                                <div class="content-holder">
-                                    <div class="text-holder">
-                                        <h6 class="title">APARTAMENTO</h6>
-                                        <p class="subtitle">Design Moderno e Funcionalidade em Harmonia</p>
-                                    </div>
-                                </div> 
-                            </a>
-                        </div>
-                    </div> 
-
-                    <div class="display-none-mobile col-md-6 col-lg-4 comerciais todos new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/comerciais/sp-estetica-dra-daiana/estetica_salao2.png" class="img-fluid">  
-                            <a href="./residenciais/index.html">                              
-                                <div class="content-holder">
-                                    <div class="text-holder">
-                                        <h6 class="title">CLINICA ESTÉTICA</h6>
-                                        <p class="subtitle">Elegância e Conforto em Cada Detalhe</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>                                                    
-                    </div> 
-
-                    <div class="col-md-6 col-lg-4 malls todos new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/shoppings/sp-shopping-cidade-tiradentes/planta1.JPG" class="img-fluid">
-                            <a href="./malls/index.html">                              
-                                <div class="content-holder">
-                                    <div class="text-holder">
-                                        <h6 class="title">SHOPPINGS</h6>
-                                        <p class="subtitle">Design estratégico para shoppings modernos, funcionais e atraentes.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>                         
-                    </div>
-                </div> 
-            </div>  
-        </div>            
+            <p>Uma arquitetura que transforma uma localização estratégica em referência para a marca.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="projetos_recentes">
-        <div class="container">
-            <h2 class="mb-5">Projetos <span class="text-danger">Recentes</span></h2>
-            <span class="line" style="display: none;"></span>
-            <div class="row">
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/comerciais/sp-estetica-dra-daiana/estetica_salao2.png">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Clínica Doutora Daiana</h6>
-
-                        <p class="post-details">
-                            <a>By: Estúdio AC Design</a>
-                            <a><i class="ti-pin text-danger"></i> Ribeirão Pires - SP</a>
-                            <a><i class="ti-ruler-alt-2 text-danger"></i> 72m²</a>
-                        </p>
-                        
-                        <p>Este projeto foi cuidadosamente desenvolvido para oferecer um ambiente sofisticado, funcional e acolhedor, refletindo o cuidado e a elegância que a clínica deseja transmitir aos seus clientes.</p>
-
-                        <p><b>Hall de Entrada: </b>Um espaço acolhedor e sofisticado, com móveis elegantes, iluminação suave e detalhes que promovem uma recepção calorosa e profissional.</p>
-
-                        <p><b>Sala de Estética: </b>Projetada para oferecer ergonomia e eficiência, conta com iluminação ideal, layout otimizado e acabamentos que refletem cuidado e bem-estar</p>
-                        
-                        <p><b>Área de Manicure: </b>Estações bem planejadas, que unem conforto e organização, garantindo uma experiência agradável para clientes e praticidade para profissionais.</p>
-                        
-                        <a href="./comerciais/sp-estetica-dra-daiana.html" class="read-more">Veja Mais <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/apartamentos/lofts/sp-loft-bia/render2.jpeg">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Studio Família Mina</h6>
-
-                        <p class="post-details">
-                            <a>By: Estúdio AC Design</a>
-                            <a><i class="ti-pin text-danger"></i> Brooklin - SP</a>
-                            <a><i class="ti-ruler-alt-2 text-danger"></i> 25m²</a>
-                        </p>
-                        
-                        <p>Este projeto foi cuidadosamente desenvolvido para otimizar cada metro quadrado, garantindo funcionalidade, conforto e elegância.</p>
-                        
-                        <p><b>Móveis Planejados: </b>Todo o mobiliário foi detalhado para maximizar o uso do espaço, integrando design moderno e soluções inteligentes, como armários embutidos, prateleiras multifuncionais e móveis compactos que garantem fluidez ao ambiente.</p>
-                        
-                        <p><b>Banheiro: </b>Um espaço prático e sofisticado, com acabamentos de alta qualidade, nichos embutidos para organização e iluminação estratégica, proporcionando conforto e modernidade.</p>
-                        
-                        <p><b>Sacada: </b>Transformada em uma extensão funcional do apartamento, a sacada recebeu acabamentos refinados e foi equipada para ser um espaço de relaxamento, com integração harmoniosa ao interior.</p>
-                        
-                        <a href="./residenciais/sp-loft-bia.html" class="read-more">Veja Mais <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/comerciais/sp-lojaBrinquedos-babyRun/lojaBrinquedos_fachada.jpeg">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title">Lojas de Brinquedos - Baby Run</h4>
-
-                        <p class="post-details">
-                            <a>By: Estúdio AC Design</a>
-                            <a><i class="ti-pin text-danger"></i> Brooklin - SP</a>
-                            <a><i class="ti-ruler-alt-2 text-danger"></i> 125m²</a>
-                        </p>
-                        
-                        <p>Criar um ambiente lúdico, moderno e funcional que atraia crianças e famílias. Otimizar o espaço disponível de 125m² para atender às necessidades da loja e dos funcionários.</p>
-                        
-                        <p><b>Área de Vendas: </b>Espaço principal para a exposição dos brinquedos. Móveis modulares e prateleiras ajustáveis em alturas diferentes para fácil acesso de crianças.</p>
-                        
-                        <p><b>Escritório: </b>Espaço reservado para administração e controle de estoque. Mesa ampla, armários planejados e iluminação funcional.</p>
-                        
-                        <p><b>Copa para Funcionários: </b>Equipado com pia, micro-ondas, frigobar e armários para utensílios. Pequeno espaço para refeições rápidas, com uma mesa compacta e cadeiras.</p>
-                        
-                        <a href="./comerciais/sp-lojaBrinquedos-babyRun.html" class="read-more">Veja Mais <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
+    <!-- DETALHE / MATERIALIDADE -->
+    <section class="section">
+      <div class="container grid grid-12 reveal">
+        <a href="projetos/yellow_k.html" class="media-link" style="grid-column: span 5;" aria-label="Ver projeto Yellow K">
+          <div class="tone tone--c ratio-3-4 banner_default_style banner3_Project1">
+            <span class="tone__label">Detalhe</span>
+          </div>
+        </a>
+        <div style="grid-column: span 7; display:flex; flex-direction:column; justify-content:center; gap:1rem;">
+          <span class="eyebrow">Materialidade</span>
+          <p class="heading heading--lg">Cada material é escolhido pelo que comunica em silêncio, não pelo que aparenta à primeira vista.</p>
         </div>
+      </div>
     </section>
 
-    <section class="section" id="servicos">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">Nossos</span> Serviços</h2>
-            <span class="line" style="display: none;"></span>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon"> 
-                            <i class="ti-ruler-pencil text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-light">Levantamento Técnico</h5>
-                            <P class="subtitle">O levantamento técnico é a etapa inicial do projeto arquitetônico, onde visitamos o local para realizar medições dos ambientes e observar as condições do espaço.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-palette text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-light">Layout dos Ambientes</h5>
-                            <P class="subtitle">Criamos a disposição ideal dos móveis, circulação e elementos estruturais, garantindo que cada ambiente atenda às necessidades do cliente, considerando funcionalidade, fluxo e conforto.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-image text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-light">Renderização de Imagens 3D</h5>
-                            <P class="subtitle">A Renderização de Imagens 3D é a criação de imagens realistas do projeto arquitetônico que permitem visualizar o design com detalhes de texturas, luz e volume, facilitando a compreensão do resultado final.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-book text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-light">Caderno Executivo</h5>
-                            <P class="subtitle">Todos os documentos técnicos do projeto arquitetônico, como plantas, cortes e especificações de materiais que serve como guia para a execução da obra.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-light">Planilha de Materiais</h5>
-                            <P class="subtitle">A Planilha de Obras detalha os quantidade, valores, frete, e links de compra de material informado no executivo arquitetônico, além de orçamentos de mão de obra.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-support text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-light">Suporte Pós Projeto</h5>
-                            <P class="subtitle">Assistência após a conclusão do projeto arquitetônico, garantindo que a execução siga conforme o planejado. Inclui ajustes, esclarecimento de dúvidas.</P>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- PROJETO 2 -->
+    <section class="section">
+      <div class="container">
+        <div class="project-block__head reveal">
+          <div>
+            <span class="eyebrow">Arquitetura Comercial — Poços de Caldas, MG</span>
+            <h2 class="heading heading--xl project-block__title">SmartFit</h2>
+          </div>
+          <a href="projetos/academia.html" class="link-line" aria-label="Ver projeto SmartFit">Ver projeto</a>
         </div>
+        <div class="grid grid-12">
+          <a href="projetos/academia.html" class="media-link project-block__media reveal">
+            <div class="tone tone--b ratio-16-10 banner_default_style banner1_Project2"></div>
+          </a>
+          <div class="project-block__side reveal">
+            <div class="tone tone--b ratio-4-5 banner_default_style banner2_Project2">
+              <span class="tone__label">Detalhe</span>
+            </div>
+            <p>Um ambiente projetado para incentivar movimento, desempenho e bem-estar.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="section contact" id="contato">
-        <div id="map" class="map"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title">Entre Em Contato</h4>
-                        <form method="post">
-                            <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Nome *" id="form_nome" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" id="form_email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Message *" rows="7" id="form_corpo" required></textarea>
-                            </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" onclick="sendMail()">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Entre em Contato</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Telefone : <br> <span class="text-muted">+55 (11) 95917-6564</h6>
-                            </div>
-                        </div>
+    <!-- MANIFESTO -->
+    <section class="manifesto">
+      <p class="heading reveal">Cada decisão tem um propósito.</p>
+    </section>
 
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">arquimandac@gmail.com</span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4" style="margin: 0 auto;">
-                            <li class="social-item">
-                                <a class="social-link text-light email" href="#">
-                                    <i class="ti-google" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a class="social-link text-light instagram" href="#">
-                                    <i class="ti-instagram" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a class="social-link text-light linkedin" href="#">
-                                    <i class="ti-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul> 
-                    </div>
-                </div>
+    <!-- PROJETO 3 -->
+    <section class="section">
+      <div class="container">
+        <div class="project-block__head reveal">
+          <div>
+            <span class="eyebrow">Arquitetura Residencial — Alto da Boa Vista, São Paulo - SP</span>
+            <h2 class="heading heading--xl project-block__title">Estúdio Mina</h2>
+          </div>
+          <a href="projetos/estudio.html" class="link-line" aria-label="Ver projeto Estúdio Mina">Ver projeto</a>
+        </div>
+        <div class="grid grid-12">
+          <a href="projetos/estudio.html" class="media-link project-block__media reveal">
+            <div class="tone tone--c ratio-16-10 banner_default_style banner1_Project4"></div>
+          </a>
+          <div class="project-block__side reveal">
+            <div class="tone tone--c ratio-4-5 banner_default_style banner2_Project4">
+              <span class="tone__label">Detalhe</span>
             </div>
+            <p>No coração de São Paulo, um espaço onde a arquitetura ganha vida.</p>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <!-- WhatsApp Button -->
-    <a class="whatsapp-button whatsapp" href="#" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- MANIFESTO FINAL -->
+    <section class="manifesto">
+      <p class="heading reveal">A arquitetura começa quando tudo o que é desnecessário desaparece.</p>
+    </section>
 
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-dark">
-                &copy; <script>document.write(new Date().getFullYear())</script> | ACAL Arquitetura | Created with <i class="ti-heart text-dark"></i> By <span class="text-dark">Alvelim Core</span></a> 
-            </p>
-        </div>
-    </footer>
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+      <p class="heading heading--xl reveal mensagem_contato"></p>
+      <div class="contact__links reveal">
+        <a href="https://wa.me/5511959176564" target="_blank" rel="noopener noreferrer" class="link-line">WhatsApp</a>
+        <a href="mailto:projesstudioacal@gmail.com" class="link-line">E-mail</a>
+        <a href="https://instagram.com/studioacal" target="_blank" rel="noopener noreferrer" class="link-line">Instagram</a>
+      </div>
+    </section>
 
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    <script src="assets/js/filter.js"></script>
-    <script src="assets/js/carrossel.js"></script>
-    <script src="assets/js/links.js"></script>
-    <script src="assets/js/load-page.js"></script>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
